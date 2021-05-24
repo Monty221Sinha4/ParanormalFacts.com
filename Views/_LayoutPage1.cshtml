@@ -13,9 +13,37 @@
 <body>
     <div style="background-color:black">
         <div style="color:white">
+            <nav class="navbar-dark">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Paranormal Facts</a>
+                        <ul class="nav navbar nav">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div style="background-color:black">
+        <div style="color:white">
+            <div class="nav-tabs">
+                @Html.ActionLink("Home", "Home", "Home")
+                @Html.ActionLink("Werewolf","Werewolf","Home")
+                @Html.ActionLink("Vampire","Vampires","Home")
+                @Html.ActionLink("UFO","UFOs","Home")
+                @Html.ActionLink("ContactUs","ContactUs","Home")
+                
+            </div>
+        </div>
+    </div>
+   
+    
+    <div style="background-color:black">
+        <div style="color:white">
             <div><h1>ParanormalFacts.com</h1></div>
             <div>
-                <p>This is a website where you can read about the paranormal and ghost stories.</p>
+                <p style="font-family:Arial">This is a website where you can read about the paranormal and ghost stories.</p>
                 <p>Click on the links to learn aboput ghosts and vampire , many more </p>
                 @RenderBody()
             </div>
